@@ -13,14 +13,65 @@
             font-style: normal;
         }
         
+        @font-face {
+            font-family: 'KyoboHandwriting2020A';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/KyoboHandwriting2020A.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         .sake {
             color: red;
             font-size: 78px;
             font-family: 'ChosunGs';
         }
+
+        .makmak{
+            font-family: KyoboHandwriting2020A;
+            font-size: 44px;
+
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        button{
+        	width:120px;
+        	height: 40px;
+        	color:#fff;
+        	background: #004fff;
+        	font-size: 16px;
+        	border:none;
+        	border-radius: 20px;
+        	box-shadow: 0 4px 16px rgba(0,79,255,0.3);
+        	transition:0.3s;
+        	position: absolute;
+        	left:50%;
+        	top:50%;
+        	transform: translate(-50%,-50%);
+        }
+        button:focus {
+        	outline:0;
+        }
+        button:hover{
+        	background: rgba(0,79,255,0.9);
+        	cursor: pointer;
+        	box-shadow: 0 2px 4px rgba(0,79,255,0.6);
+        }
+    </style>
 </head>
 <body>
+    <script src="./js/app.js"></script>
+    <button onclick="init();">공지</button>
+    <span class="makmak">사실 마음고생을 속으로는 하고 있다.<br>
+    앞으로의 공지같은 건 이 페이지에 날짜와 함께 적어놓으련다.<br>
+    <a href="./setsumei.html">여기를 눌러서 그 페이지로 가면 좋겠다.</a><br>
+    이 이상으로는 한계다. 나도 나의 동생과 1명의 가족도 막막하다.<br>
+    <h1 style="color: red;">앞으로는 모든 일이 잘 되었으면...</h1></span>
     <div class="sake">
+        <br>
+        <br>
         <h1>바보천치등신같은추잡스런말을뱉어누군가를상처입혔다</h1>
         <h1>무시하지못한채로말그대로받아들여어김없이상처입었다</h1>
         <h1>너무나도좋아했던것들조차이젠염증이나는기분이들었다</h1>
